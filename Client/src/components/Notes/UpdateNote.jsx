@@ -10,7 +10,7 @@ export default function AddRecipe() {
     const {id} = useParams();
     console.log(id);
     useEffect(()=>{
-        fetch(`http://localhost:5000/note/${id}`,{
+        fetch(`https://abhi-noteapp.onrender.com/note/${id}`,{
             headers : {
                 'Authorization' : "Bearer " + localStorage.getItem('token')
             }
@@ -24,7 +24,7 @@ export default function AddRecipe() {
     },[])
 
     const handleSubmit = () => {
-            fetch(`http://localhost:5000/update/${id}`, {
+            fetch(`https://abhi-noteapp.onrender.com/update/${id}`, {
                 method: 'put',
                 headers: {
                     'Content-Type': 'application/json',

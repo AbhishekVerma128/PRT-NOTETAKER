@@ -16,7 +16,7 @@ export default function Login() {
       return
     }
     else {
-      fetch('http://localhost:5000/login', {
+      fetch('https://abhi-noteapp.onrender.com/login', {
         method: 'post',
         mode: "cors",
         headers: {

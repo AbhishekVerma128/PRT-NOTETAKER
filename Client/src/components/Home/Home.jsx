@@ -11,7 +11,7 @@ export default function Home() {
     navigate("/detail/" + id)
   }
   useEffect(() => {
-    fetch('http://localhost:5000/notes', {
+    fetch('https://abhi-noteapp.onrender.com/notes', {
       headers: {
         'Authorization': "Bearer " + localStorage.getItem('token')
       }

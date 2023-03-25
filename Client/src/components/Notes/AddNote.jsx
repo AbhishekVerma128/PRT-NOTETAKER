@@ -9,7 +9,7 @@ export default function AddRecipe() {
     const [desc, setDesc] = useState("")
 
     const handleSubmit = () => {
-            fetch('http://localhost:5000/create-note', {
+            fetch('https://abhi-noteapp.onrender.com/create-note', {
                 method: 'post',
                 headers: {
                     'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Navbar() {
   const navigate = useNavigate()
   const DeleteAll=()=>{
-    fetch('http://localhost:5000/deleteAll', {
+    fetch('https://abhi-noteapp.onrender.com/deleteAll', {
                 method: 'delete',
                 headers: {
                     'Content-Type': 'application/json',

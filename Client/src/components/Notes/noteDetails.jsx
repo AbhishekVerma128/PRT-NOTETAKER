@@ -7,7 +7,7 @@ const navigate = useNavigate()
     const {id} = useParams();
    
     useEffect(()=>{
-        fetch(`http://localhost:5000/note/${id}`,{
+        fetch(`https://abhi-noteapp.onrender.com/note/${id}`,{
             headers : {
                 'Authorization' : "Bearer " + localStorage.getItem('token')
             }
@@ -19,7 +19,7 @@ const navigate = useNavigate()
     },[])
 
     const handleDelete = async(id)=>{
-        await fetch(`http://localhost:5000/delete/${id}`,{
+        await fetch(`https://abhi-noteapp.onrender.com/delete/${id}`,{
           method: 'delete',        
         })
         .then(res=>res.json())

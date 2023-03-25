@@ -31,7 +31,7 @@ export default function Registration() {
             }
             else{
               setErr("")
-                fetch('http://localhost:5000/signup',{
+                fetch('https://abhi-noteapp.onrender.com/signup',{
                     method: 'post',
                     mode : "cors",
                     headers : {
